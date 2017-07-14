@@ -1,4 +1,4 @@
-3 //main function,the game, when button pressed.
+//main function,the game, when button pressed.
 function HeroesOfTheScript() {
     alert("Welcome to Heroes Of The Script!");
     var nameHero = prompt("Please name your Hero!");
