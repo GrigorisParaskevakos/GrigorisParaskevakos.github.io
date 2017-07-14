@@ -1,11 +1,3 @@
-body {
-    position: relative;
-    background-image: url("../images/Nebula.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100vh;
-}
-
-
 /*css variables in @keyframes*/
 
 @keyframes bg {
@@ -14,6 +6,18 @@ body {
     }
     to {
         background-color: #ff5050;
+    }
+}
+
+
+/*css variables in @keyframes*/
+
+@keyframes c {
+    from {
+        color: #00ff00;
+    }
+    to {
+        color: #ff5050;
     }
 }
 
@@ -26,4 +30,37 @@ button {
     text-align: center;
     font-family: Impact;
     border-style: solid;
+}
+
+.container {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+body {
+    position: relative;
+    background-image: url("../images/Nebula.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    animation: 2.5s bg infinite alternate;
+}
+
+
+/*css rule for footer*/
+
+#footer {
+    opacity: 0.75;
+    text-align: center;
+    color: beige;
+    display: inline;
+}
+
+#footer a {
+    color: green;
+}
+
+#footer a:hover {
+    animation: 2.5s c infinite alternate;
 }
