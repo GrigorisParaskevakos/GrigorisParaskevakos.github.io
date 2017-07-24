@@ -1,27 +1,76 @@
-o<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- HeroesOfTheScript-->
 <!-- Text Base RPG GAME-->
 <html>
 
 <head>
+
     <title>Heroes Of the Script</title>
     <meta charset="utf-8">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="HeroesOfTheScript.css">
     <!--favicon-->
-    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="resources/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 
 <body>
-    <script src="HeroesOfTheScript.js"></script>
-    <center><button type="button" data-toggle="tooltip" title="***Make a hero***Challenge 3 diffrent type of enemies***Collect loot when you win a fight***Complete level 5 to see your score!***" onclick="HeroesOfTheScript()">S T A R T</button></center>
-    <div class="container">
-        <div id="footer">
-            <p>Copyright &copy; <a href="https://www.portofoliogr.com/ " target="_blank ">PortfolioGP</a> 2017 ♠ Developed by <em>G. P.</em></p>
-        </div>
-    </div>
-</body>
 
-</html>
+    <main>
+        <header>
+            <h1>Heroes Of the Script</h1>
+
+        </header>
+
+        <script src="HeroesOfTheScript.js"></script>
+        <center><button type="button" data-toggle="tooltip" title="***Make a hero***Challenge 3 diffrent type of enemies***Collect loot when you win a fight***Complete level 5 to see your score!***" onclick="HeroesOfTheScript()">S T A R T</button></center>
+
+        <div class="error"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="jquery.ripples.js"></script>
+        <script>
+            $(document).ready(function() {
+                try {
+                    $('body').ripples({
+                        resolution: 512,
+                        dropRadius: 20, //px
+                        perturbance: 0.04,
+                    });
+                    $('main').ripples({
+                        resolution: 128,
+                        dropRadius: 10, //px
+                        perturbance: 0.04,
+                        interactive: false
+                    });
+                } catch (e) {
+                    $('.error').show().text(e);
+                }
+
+                $('.js-ripples-disable').on('click', function() {
+                    $('body, main').ripples('destroy');
+                    $(this).hide();
+                });
+
+                $('.js-ripples-play').on('click', function() {
+                    $('body, main').ripples('play');
+                });
+
+                $('.js-ripples-pause').on('click', function() {
+                    $('body, main').ripples('pause');
+                });
+
+                // Automatic drops
+                setInterval(function() {
+                    var $el = $('main');
+                    var x = Math.random() * $el.outerWidth();
+                    var y = Math.random() * $el.outerHeight();
+                    var dropRadius = 20;
+                    var strength = 0.04 + Math.random() * 0.04;
+
+                    $el.ripples('drop', x, y, dropRadius, strength);
+                }, 400);
+            });
+        </script>
+    </main>
 </body>
 
 </html>
