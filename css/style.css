@@ -1,3 +1,12 @@
+/*body {
+    position: relative;
+    background-image: url("https://www.dropbox.com/s/691umytykhk0jb4/Nebula.jpg?dl=1");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+  */
+
+
 /*css variables in @keyframes*/
 
 @keyframes bg {
@@ -9,18 +18,6 @@
     }
 }
 
-
-/*css variables in @keyframes*/
-
-@keyframes c {
-    from {
-        color: #00ff00;
-    }
-    to {
-        color: #ff5050;
-    }
-}
-
 button {
     animation: 2.5s bg infinite alternate;
     font-size: 24px;
@@ -28,39 +25,64 @@ button {
     border-radius: 50%;
     padding: 16px 32px;
     text-align: center;
-    font-family: Impact;
+    font-family: cursive;
     border-style: solid;
 }
 
-.container {
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
 }
 
 body {
-    position: relative;
-    background-image: url("../images/Nebula.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100vh;
-    animation: 2.5s bg infinite alternate;
-}
-
-
-/*css rule for footer*/
-
-#footer {
-    opacity: 0.75;
+    color: #fff;
+    font-size: 16px;
+    font-family: Helvetica;
+    background-color: black;
+    background-image: url("Nebula.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+    height: 100%;
     text-align: center;
-    color: beige;
-    display: inline;
+    background-size: 100% 100vh
 }
 
-#footer a {
-    color: green;
+body:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
 }
 
-#footer a:hover {
-    animation: 2.5s c infinite alternate;
+main {
+    display: inline-block;
+    vertical-align: middle;
+    color: cadetblue;
+    max-width: 500px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 32px;
+}
+
+pre {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.error {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    color: #f00;
+    padding: 5px;
+    max-width: 50%;
 }
