@@ -87,3 +87,23 @@ pre {
     padding: 5px;
     max-width: 100%;
 }
+
+
+/*Footer*/
+
+#footer {
+    color: rgb(93.7%, 71.9%, 56.6%);
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    padding: 0cm 1.5cm;
+    width: 100%;
+    opacity: 0.75;
+    background-color: transparent;
+}
+
+#footer a {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 24px;
+    color: greenyellow;
+}
