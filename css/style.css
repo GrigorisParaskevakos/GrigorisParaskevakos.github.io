@@ -43,8 +43,8 @@ body {
     color: #fff;
     font-size: 16px;
     font-family: Helvetica;
-    background-color: black;
-    background-image: url("../images/Nebula.jpg");
+    background-color: transparent;
+    background-image: url("../images/texture.jpg");
     background-size: cover;
     background-position: 50% 0;
     height: 100%;
