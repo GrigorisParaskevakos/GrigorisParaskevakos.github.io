@@ -93,7 +93,7 @@ pre {
 
 #footer {
     color: rgb(93.7%, 71.9%, 56.6%);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: normal;
     text-align: center;
     padding: 0cm 1.5cm;
@@ -104,6 +104,6 @@ pre {
 
 #footer a {
     font-family: Impact;
-    font-size: 24px;
+    font-size: 14px;
     color: greenyellow;
 }
