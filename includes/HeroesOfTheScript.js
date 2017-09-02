@@ -1,3 +1,4 @@
+//@author PARASKEVAKOS_G. https://www.portofoliogr.com/
 //main function,the game, when button pressed.
 function HeroesOfTheScript() {
     alert("Welcome to Heroes Of The Script!");

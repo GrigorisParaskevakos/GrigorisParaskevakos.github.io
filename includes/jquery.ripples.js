@@ -1,7 +1,7 @@
 /*!
  * jQuery Ripples plugin v0.5.3 / https://github.com/sirxemic/jquery.ripples
  * MIT License
- * @author sirxemic / https://sirxemic.com/
+ * Thanks to @author sirxemic / https://sirxemic.com/
  */
 
 (function(factory) {
