@@ -13,17 +13,33 @@
 
 html {
   height: 100%;
+  font-size: 14px;
+}
+body {
+  color: #fff;
+  font-size: 16px;
+  font-family: Helvetica;
+  background-color: transparent;
+  background-image: url("../images/texture.jpg");
+  background-size: cover;
+  background-position: 50% 0;
+  height: 100%;
+  text-align: center;
+  background-size: 100% 100vh;
 }
 
 h1 {
-  font-size: 32px;
 }
+
+/* Header Section - Desktop Navigation */
+
+/* Main Section */
 
 /*Footer*/
 
-#footer {
+footer {
   color: rgb(93.7%, 71.9%, 56.6%);
-  font-size: 12px;
+  font-size: 2rem;
   font-weight: normal;
   text-align: center;
   padding: 0cm 1.5cm;
@@ -32,7 +48,7 @@ h1 {
   background-color: black;
 }
 
-#footer a {
+footer a {
   font-family: Impact;
   font-size: 14px;
   color: greenyellow;
