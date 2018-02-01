@@ -1,110 +1,40 @@
-/*body {
-    position: relative;
-    background-image: url("https://www.dropbox.com/s/691umytykhk0jb4/Nebula.jpg?dl=1");
-    background-repeat: no-repeat;
-    background-size: 100% 100vh;
-}
-  */
-
+/* Universal Styling */
 
 /*css variables in @keyframes*/
 
 @keyframes bg {
-    from {
-        background-color: #00ff00;
-    }
-    to {
-        background-color: #ff5050;
-    }
-}
-
-button {
-    animation: 2.5s bg infinite alternate;
-    font-size: 24px;
-    margin: 8px 4px;
-    border-radius: 50%;
-    padding: 16px 32px;
-    text-align: center;
-    font-family: "Courier New", Courier, monospace;
-    border-style: solid;
-    font-weight: bold;
-}
-
-* {
-    margin: 0;
-    padding: 0;
+  from {
+    background-color: #00ff00;
+  }
+  to {
+    background-color: #ff5050;
+  }
 }
 
 html {
-    height: 100%;
-}
-
-body {
-    color: #fff;
-    font-size: 16px;
-    font-family: Helvetica;
-    background-color: transparent;
-    background-image: url("../images/texture.jpg");
-    background-size: cover;
-    background-position: 50% 0;
-    height: 100%;
-    text-align: center;
-    background-size: 100% 100vh;
-}
-
-body:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-}
-
-main {
-    display: inline-block;
-    vertical-align: middle;
-    color: cadetblue;
-    max-width: 500px;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  height: 100%;
 }
 
 h1 {
-    font-size: 32px;
+  font-size: 32px;
 }
-
-pre {
-    text-align: left;
-    margin-top: 20px;
-}
-
-.error {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background: #000;
-    color: #f00;
-    padding: 5px;
-    max-width: 100%;
-}
-
 
 /*Footer*/
 
 #footer {
-    color: rgb(93.7%, 71.9%, 56.6%);
-    font-size: 12px;
-    font-weight: normal;
-    text-align: center;
-    padding: 0cm 1.5cm;
-    width: 100%;
-    opacity: 0.80;
-    background-color: black;
+  color: rgb(93.7%, 71.9%, 56.6%);
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  padding: 0cm 1.5cm;
+  width: 100%;
+  opacity: 0.8;
+  background-color: black;
 }
 
 #footer a {
-    font-family: Impact;
-    font-size: 14px;
-    color: greenyellow;
-    text-decoration: none;
+  font-family: Impact;
+  font-size: 14px;
+  color: greenyellow;
+  text-decoration: none;
 }
