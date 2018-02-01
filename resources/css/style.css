@@ -1,13 +1,24 @@
 /* Universal Styling */
+/*Font-face*/
+
+@font-face {
+  font-family: "Blossom";
+  src: url(../fonts/Strawberry_Blossom.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Space";
+  src: url(../fonts/space_age.ttf) format("truetype");
+}
 
 /*css variables in @keyframes*/
 
-@keyframes bg {
+@keyframes KeyGreenRedColor {
   from {
-    background-color: #00ff00;
+    color: #00ff00;
   }
   to {
-    background-color: #ff5050;
+    color: #ff5050;
   }
 }
 
@@ -16,8 +27,8 @@ html {
   font-size: 14px;
 }
 body {
+  /* display: flex; */
   color: #fff;
-  font-size: 16px;
   font-family: Helvetica;
   background-color: transparent;
   background-image: url("../images/texture.jpg");
@@ -29,28 +40,88 @@ body {
 }
 
 h1 {
+  font-size: 24rem;
+  width: 100%;
+  font-family: "Blossom";
+  text-align: center;
+  margin: 0 auto;
+  animation: 2.5s KeyGreenRedColor infinite alternate;
+  margin-top: 15rem;
 }
 
 /* Header Section - Desktop Navigation */
-
+header {
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  background: rgba(44, 44, 44, 0.9);
+  border-radius: 1rem;
+}
+ul {
+  display: inline-flex;
+  justify-content: space-between;
+}
+li {
+  font-size: 2.5rem;
+  font-family: "Space";
+}
+li a {
+  text-decoration: none;
+  color: rgb(0, 255, 115);
+  margin: 2rem;
+  justify-content: stretch;
+}
+li a:hover {
+  color: rgb(44, 44, 44);
+  background-color: rgb(0, 255, 115);
+  border-radius: 0.3rem;
+}
+li a:focus {
+  border: 1px solid rgb(0, 255, 115);
+}
 /* Main Section */
-
+main {
+  display: flex;
+  justify-content: center;
+}
+#Coming {
+  /* display: block; */
+}
 /*Footer*/
 
 footer {
   color: rgb(93.7%, 71.9%, 56.6%);
   font-size: 2rem;
-  font-weight: normal;
   text-align: center;
   padding: 0cm 1.5cm;
   width: 100%;
   opacity: 0.8;
   background-color: black;
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
 }
 
 footer a {
   font-family: Impact;
-  font-size: 14px;
+  font-size: 2rem;
   color: greenyellow;
   text-decoration: none;
+}
+
+/*************** 
+    ****************
+    *@media queries*
+    ****************
+    ****************/
+@media only screen and (max-width: 1200px) {
+  h1 {
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: 1135px) {
+  body {
+    line-height: 1.2;
+  }
 }
