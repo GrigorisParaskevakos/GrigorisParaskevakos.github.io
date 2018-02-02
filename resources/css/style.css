@@ -29,7 +29,6 @@ html {
 body {
   /* display: flex; */
   color: #fff;
-  font-family: Helvetica;
   background-color: transparent;
   background-image: url("../images/texture.jpg");
   background-size: cover;
