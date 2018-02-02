@@ -157,9 +157,3 @@ footer a {
     font-size: 6rem;
   }
 }
-
-@media only screen and (max-width: 1135px) {
-  body {
-    line-height: 1.2;
-  }
-}
