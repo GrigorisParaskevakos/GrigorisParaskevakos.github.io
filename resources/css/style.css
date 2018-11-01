@@ -39,13 +39,13 @@ body {
 }
 
 h1 {
-  font-size: 24rem;
+  font-size: 6rem;
   width: 100%;
-  font-family: "Blossom";
+  font-family: "Space";
   text-align: center;
   margin: 0 auto;
   animation: 2.5s KeyGreenRedColor infinite alternate;
-  margin-top: 15rem;
+  margin-top: 76rem;
 }
 
 /* Header Section -- Desktop Navigation */
