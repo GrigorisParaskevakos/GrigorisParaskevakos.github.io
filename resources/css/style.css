@@ -29,10 +29,15 @@ html {
 }
 
 body {
+  /* display: flex; */
+  /* background-color: transparent; */
+  background: black;
+  /* background-size: cover; */
+  /* background-position: 50% 0; */
+  /* height: 100%; */
   text-align: center;
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
+  /* background-size: 100% 100vh; */
+  width: 100%;
 }
 
 canvas {
@@ -52,6 +57,7 @@ h1 {
 /* Header Section -- Desktop Navigation */
 header {
   width: 100%;
+  /* height: 3rem; */
   z-index: 100;
   position: fixed;
   background: rgba(44, 44, 44, 0.9);
@@ -91,7 +97,46 @@ li a:focus {
 main {
   display: flex;
   justify-content: center;
-  height: 93%;
+}
+
+#next {
+  /*border: 1px solid red;*/
+  /* margin-bottom: 10%; */
+  /* margin: 0 auto; */
+  width: 10%;
+  /* height: 30%; */
+  bottom: -10%;
+  margin-top: 50%;
+}
+
+#arrow {
+  /* border:1px solid red; */
+  border-radius: 30px;
+  z-index: 99999;
+  /*margin-bottom: 10%;
+  */
+  /*margin: 0 auto;
+  */
+  width: 50%;
+  /*height: 30%;
+  */
+  bottom: -10%;
+  margin-top: 59%;
+  /* color: rgb(93.7%, 71.9%, 56.6%); */
+  /* animation: 2.5s KeyGreenRedColor infinite alternate; */
+  background-color: hsl(0, 0%, 10%);
+  /* -webkit-animation: 2.5s KeyGreenRedColor infinite alternate; */
+}
+
+#arrow:hover {
+  color: rgb(44, 44, 44);
+  background-color: rgb(0, 255, 115);
+  /* border-radius: 0.3rem; */
+}
+
+
+#Coming {
+  /* display: block; */
 }
 
 /*Footer*/
@@ -100,14 +145,17 @@ footer {
   color: rgb(93.7%, 71.9%, 56.6%);
   font-size: 1.5rem;
   text-align: center;
+  /* padding: 0cm 1.5cm; */
   width: 100%;
   opacity: 0.8;
   background-color: black;
-  position: absolute;
+  /* margin-bottom: 1rem; */
+  /* position: absolute; */
+  /* bottom: 0; */
   font-family: "Space";
   display: flex;
   justify-content: center;
-  z-index: 9999999;
+  z-index: 6666;
 }
 
 footer a {
@@ -144,6 +192,7 @@ footer a {
 
   li {
     font-size: 1.35rem;
+    /* display: none; */
   }
 
   footer {
