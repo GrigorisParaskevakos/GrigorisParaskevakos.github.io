@@ -111,7 +111,9 @@ main {
 
 #arrow:hover {
   color: rgb(44, 44, 44);
-  background-color: hsl(210, 67%, 72%)      /* border-radius: 0.3rem; */;
+  background-color: hsl(210, 67%, 72%)
+    /* border-radius: 0.3rem; */
+  ;
 }
 
 
@@ -155,6 +157,7 @@ audio {
   width: fit-content;
   margin: 0 auto;
 }
+
 .audio:hover {
   display: block !important;
   width: fit-content;
@@ -196,7 +199,7 @@ footer a {
 
   li {
     font-size: 1.35rem;
-    /* display: none; */
+    display: flex;
   }
 
   footer {
@@ -214,5 +217,25 @@ footer a {
 @media only screen and (max-width: 370px) {
   h1 {
     font-size: 6rem;
+  }
+
+  #next {
+    width: 10%;
+    margin-top: 130%;
+  }
+
+  #arrow {
+    background-color: hsl(208, 30%, 8%);
+  }
+
+  li {
+    height: 3rem;
+    margin: 0 auto;
+  }
+
+  li a {
+    text-decoration: none;
+    color: rgb(0, 255, 115);
+    font-size: 1.05rem;
   }
 }
