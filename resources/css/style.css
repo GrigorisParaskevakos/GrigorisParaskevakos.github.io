@@ -225,7 +225,7 @@ footer a {
   }
 
   #arrow {
-    background-color: hsl(208, 30%, 8%);
+    background-color: hsl(208, 30%, 8%) !important;
   }
 
   li {
