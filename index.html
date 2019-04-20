@@ -62,14 +62,23 @@
     <!-- Desktop Navigation -->
     <!--Main Section-->
     <main>
-        <div id="Coming">
+        <!-- <div id="Coming">
             <h1>loading. . .</h1>
-        </div>
+        </div> -->
 
         <div id="next">
-            <img id="arrow" src="resources/images/execute.svg" onclick="arrowFunction();" />
+            <img id="arrow" src="resources/images/execute.svg"
+                onclick="mp3Player.musicPlayer.play();arrowFunction();" />
         </div>
     </main>
+
+    <!-- audio -->
+    <div class="audio">
+        <audio id="muse" controls>
+            <source src="resources/audio/RulledBySecrecy.mp3" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 
     <!-- Footer-->
     <!-- https://grigorisparaskevakos.github.io/ -->
@@ -85,14 +94,11 @@
         </p>
     </footer>
 
-    <!-- audio -->
-    <audio id="muse">
-        <source src="resources/audio/RulledBySecrecy.mp3" type="audio/ogg">
-        Your browser does not support the audio element.
-    </audio>
+
+
     <!-- https://www.youtube.com/watch?v=BxbJmMMq0A4 -->
     <a href="https://www.youtube.com/watch?v=BxbJmMMq0A4"></a>
-    <button id="start" onclick="mp3Player.musicPlayer.play()" type="button">PLAY</button>
+
     <script>
         var player = function () {
 
@@ -110,15 +116,13 @@
                 },
 
                 pause: function () {
-                    x.pause();
+                    document.getElementById("muse").pause();
                 }
 
             };
         };
-
         let mp3Player = new player();
     </script>
-
 </body>
 
 </html>
