@@ -186,20 +186,20 @@ audio {
 
 
 .audio {
-  /* display: none !important; */
+  display: none !important;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
 
-.audio:hover {
+/* .audio:hover {
   display: block !important;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-}
+} */
 
 
 footer a {
