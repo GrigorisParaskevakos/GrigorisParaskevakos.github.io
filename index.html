@@ -39,27 +39,6 @@
         <script src="includes/js/main.js"></script>
         <script src="includes/js/noise.js"></script>
 
-
-        <script>
-    /**
-     * Ui Hidden Url btn
-     */
-            function arrowFunction(url) {
-
-                // location.href = "../ColmarAcademy/index.html";
-                var coffeeURL = "../ColmarAcademy/index.html";
-
-                //set url to coffee
-                if (url === 'coffee') {
-                    url = coffeeURL;
-                }
-                console.log("URL used: " + url);
-                window.open(url, '_blank');
-            }
-        </script>
-
-
-
         <!-- Header Section -->
         <header>
             <nav>
@@ -88,11 +67,12 @@
 
             <div id="next">
                 <img id="arrow" src="resources/images/execute.svg"
-                    onclick="mp3Player.musicPlayer.play();arrowFunction('includes/assets/projects/HeroesOfTheScript/index.html');">
+                    onclick="mp3Player.musicPlayer.play();arrowFunction('HeroesOfTheScript');">
             </div>
 
             <div id="coffee">
-                <img id="arrow" src="resources/images/execute.svg" onnclick="arrowFunction('coffee');">
+                <img id="arrow" src="resources/images/execute.svg" 
+                onclick="mp3Player.musicPlayer.play();arrowFunction('coffee');">
 
                 <a href="./includes/assets/projects/coffee/index.html" target="_blank" rel="noopener"></a>
             </div>
