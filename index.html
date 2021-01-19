@@ -1,8 +1,13 @@
-<!DOCTYPE html>
 <html lang="en">
 <!-- 1920x1080 -->
 
 <head>
+    <style>
+        .jquery-ripples {
+            position: relative;
+            z-index: 0;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,18 +18,18 @@
 
     <title>PortfolioGR</title>
     <!--favicon-->
-    <link href="resources/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="resources/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <!-- Scripts -->
 
 
 </head>
 
-<body>
+<body style="" class="jquery-ripples">
     <!-- ******************************************************************* -->
 
     <!-- Scripts APIs-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
     <script src="includes/js/ready_function.js"></script>
     <script src="includes/js/jquery.ripples.js"></script>
@@ -61,20 +66,27 @@
 
     <!-- Desktop Navigation -->
     <!--Main Section-->
-    <main>
+    <main class="jquery-ripples">
         <!-- <div id="Coming">
             <h1>loading. . .</h1>
         </div> -->
 
         <div id="next">
-            <img id="arrow" src="resources/images/execute.svg"
-                onclick="mp3Player.musicPlayer.play();arrowFunction();" />
+            <img id="arrow" src="resources/images/execute.svg" onclick="mp3Player.musicPlayer.play();arrowFunction();">
         </div>
+
+        <div id="coffee">
+            <img id="arrow" src="resources/images/execute.svg" <a href="./includes/assets/projects/coffee/index.html" target="_blank" rel="noopener"</a> >/>
+
+
+
+        </div>
+        <canvas width="1584" height="940" style="position: absolute; inset: 0px; z-index: -1;"></canvas>
     </main>
 
     <!-- audio -->
     <div class="audio">
-        <audio id="muse" controls controlsList="nodownload">
+        <audio id="muse" controls="" controlslist="nodownload">
             <source src="resources/audio/RulledBySecrecy.mp3" type="audio/ogg">
             Your browser does not support the audio element.
         </audio>
@@ -89,8 +101,8 @@
             </a>2019 ♠ Developed by Grigoris Paraskevakos
         </p> -->
         <p>Copyright
-            <a href="https://grigorisparaskevakos.github.io/" target="_blank " rel="noopener">PortfolioGP&copy;
-            </a>2019 ♠ Developed by Grigoris Paraskevakos
+            <a href="https://grigorisparaskevakos.github.io/" target="_blank " rel="noopener">PortfolioGP©
+            </a>2021 ♠ crafted by Grigoris Paraskevakos
         </p>
     </footer>
 
@@ -123,6 +135,10 @@
         };
         let mp3Player = new player();
     </script>
+
+
+    <canvas width="1584" height="967" style="position: absolute; inset: 0px; z-index: -1;"></canvas><canvas width="1601"
+        height="798" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></canvas>
 </body>
 
 </html>

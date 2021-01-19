@@ -28,7 +28,7 @@
 /**
  * Ui btn
  */
-function arrowFunction() {
+function arrowFunction(url) {
     // location.href = "../ColmarAcademy/index.html";
-    window.open('../ColmarAcademy/index.html','_blank');
+    window.open(url,'_blank');
 }
