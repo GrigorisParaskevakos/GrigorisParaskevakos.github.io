@@ -124,7 +124,7 @@ main {
   margin-top: 50%;
 }
 
-#arrow {
+.arrows {
   border-radius: 30px;
   z-index: 99999;
   /* width: 50%; */
@@ -134,11 +134,14 @@ main {
   -webkit-animation: 2.5s KeyGreenRedColor infinite alternate;
 }
 
-#arrow:hover {
+#arrowHeroes:hover {
   color: rgb(44, 44, 44);
-  background-color: hsl(210, 67%, 72%)
-    /* border-radius: 0.3rem; */
-  ;
+  background-color: hsl(106, 66%, 72%)!important;
+}
+
+#arrowCoffee:hover {
+  color: rgb(44, 44, 44);
+  background-color: hsl(0, 89%, 50%)!important;  
 }
 
 

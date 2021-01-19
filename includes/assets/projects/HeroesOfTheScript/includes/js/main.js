@@ -34,8 +34,8 @@ function arrowFunction(url) {
     //Project Urls
     var coffeeURL = "includes/assets/projects//coffee/index.html";
     var HeroesOfTheScript = "includes/assets/projects/HeroesOfTheScript/index.html";
-    var ColmarAcademy = "includes/assets/projects/ColmarAcademy/index.html";
-    var WDA = "";
+    var ColmarAcademy = "../ColmarAcademy/index.html";
+    var WDA = "https://grigorisparaskevakos.github.io/WDA/";
 
 
     switch (url) {
