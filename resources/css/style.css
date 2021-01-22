@@ -43,6 +43,7 @@ body {
   text-align: center;
   /* background-size: 100% 100vh; */
   width: 100%;
+  position: fixed!important;
 }
 
 canvas {
@@ -153,28 +154,39 @@ main {
 
 footer {
   color: rgb(93.7%, 71.9%, 56.6%);
-  font-size: 21px;
+  /* font-size: 21px; */
   font-size: 1.5rem;
   text-align: center;
   width: 100%;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   background-color: black;
-  bottom: 0;
+  /* bottom: 0; */
   font-family: "Space";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  z-index: 6666;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* z-index: 6666; */
+  margin-bottom: -460px;
 }
+
+footer a {
+  font-size: 2rem;
+  color: greenyellow;
+  text-decoration: none;
+}
+
 
 
 #muse {
   /* margin: 0 auto; */
 }
+
+
+/* supportive classes */
 
 audio {
   width: 350px !important;
@@ -205,18 +217,9 @@ audio {
 } */
 
 
-footer a {
-  font-size: 28px;
-  font-size: 2rem;
-  color: greenyellow;
-  text-decoration: none;
-}
-
-/*************** 
-****************
-*@media queries*
-****************
-****************/
+/*************** *************** *************** *************** *************** 
+****************************** @media queries *************** ***************
+*************** *************** *************** *************** ***************/
 /* @media only screen and (max-width: 1340px) {
   h1 {
     font-size: 15rem;

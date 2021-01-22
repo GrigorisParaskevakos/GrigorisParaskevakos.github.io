@@ -1,7 +1,17 @@
+<!DOCTYPE html>
 <html lang="en">
+<link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+<link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+<style lang="en" type="text/css" id="dark-mode-custom-style"></style>
 <!-- 1920x1080 -->
 
 <head>
+    <style>
+        .jquery-ripples {
+            position: relative;
+            z-index: 0;
+        }
+    </style>
     <style>
         .jquery-ripples {
             position: relative;
@@ -12,129 +22,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
+
+    <!-- *************************<style>*********************************** -->
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
     <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
 
-    <title>PortfolioGR</title>
+
+    <title>Loafing...</title>
     <!--favicon-->
     <link href="resources/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-    <!-- Scripts -->
+    <!-- *************************<scripts>*********************************** -->
+    <!-- Scripts APIs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="includes/js/ready_function.js"></script>
+    <script src="includes/js/jquery.ripples.js"></script>
+
+    <!--Custom Scripts -->
+    <script src="includes/js/main.js"></script>
+    <script src="includes/js/noise.js"></script>
+    <!-- *************************</scripts>*********************************** -->
 
 
 </head>
 
 <body style="" class="jquery-ripples">
-    <!-- ******************************************************************* -->
 
-    <!-- Scripts APIs-->
-    <<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-        <script src="includes/js/ready_function.js"></script>
-        <script src="includes/js/jquery.ripples.js"></script>
 
-        <!--Custom Scripts -->
-        <script src="includes/js/main.js"></script>
-        <script src="includes/js/noise.js"></script>
 
-        <!-- Header Section -->
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://grigorisparaskevakos.github.io/">Home</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/GrigorisParaskevakos?tab=repositories" target="_blank "
-                            rel="noopener">Repositories</a>
-                    </li>
-                    <li>
-                        <a href="https://gr.linkedin.com/in/grigoris-paraskevakos-897360148" target="_blank "
-                            rel="noopener">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
 
-        <!-- Desktop Navigation -->
-        <!--Main Section-->
-        <main class="jquery-ripples">
-            <!-- <div id="Coming">
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://grigorisparaskevakos.github.io/">Home</a>
+                </li>
+                <li>
+                    <a href="https://github.com/GrigorisParaskevakos?tab=repositories" target="_blank "
+                        rel="noopener">Repositories</a>
+                </li>
+                <li>
+                    <a href="https://gr.linkedin.com/in/grigoris-paraskevakos-897360148" target="_blank "
+                        rel="noopener">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Desktop Navigation -->
+    <!--Main Section-->
+    <main class="jquery-ripples">
+        <div id="Coming">
             <h1>loading. . .</h1>
-        </div> -->
-
-            <div id="next">
-                <img class="arrows" id="arrowHeroes" src="resources/images/execute.svg"
-                    onclick="mp3Player.musicPlayer.play();arrowFunction('HeroesOfTheScript');">
-            </div>
-
-            <div id="coffee">
-                <img class="arrows" id="arrowCoffee" src="resources/images/execute.svg" 
-                onclick="mp3Player.musicPlayer.play();arrowFunction('coffee');">
-
-                <a href="./includes/assets/projects/coffee/index.html" target="_blank" rel="noopener"></a>
-            </div>
-            <canvas width="1584" height="940" style="position: absolute; inset: 0px; z-index: -1;"></canvas>
-        </main>
-
-        <!-- audio -->
-        <div class="audio">
-            <audio id="muse" controls="" controlslist="nodownload">
-                <source src="resources/audio/RulledBySecrecy.mp3" type="audio/ogg">
-                Your browser does not support the audio element.
-            </audio>
         </div>
 
-        <!-- Footer-->
-        <!-- https://grigorisparaskevakos.github.io/ -->
-        <footer>
-            <!-- <p>Copyright
+        <div id="next">
+            <img class="arrows" id="arrowHeroes" src="resources/images/execute.svg"
+                onclick="mp3Player.musicPlayer.play();arrowFunction('HeroesOfTheScript');">
+        </div>
+
+        <div id="coffee">
+            <img class="arrows" id="arrowCoffee" src="resources/images/execute.svg"
+                onclick="mp3Player.musicPlayer.play();arrowFunction('coffee');">
+
+            <a href="./includes/assets/projects/coffee/index.html" target="_blank" rel="noopener"></a>
+        </div>
+        <!-- <canvas width="1920" height="1080" style="position: absolute; inset: 0px; z-index: -1;"></canvas>
+        <canvas width="1920" height="1080" style="position: absolute; inset: 0px; z-index: -1;"></canvas> -->
+    </main>
+
+    <!-- audio -->
+    <div class="audio">
+        <audio id="muse" controls="" controlslist="nodownload">
+            <source src="resources/audio/RulledBySecrecy.mp3" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Footer-->
+    <!-- https://grigorisparaskevakos.github.io/ -->
+    <footer>
+        <!-- <p>Copyright
             <a href="includes/assets/projects/HeroesOfTheScript/index.html" target="_blank "
                 rel="noopener">PortfolioGP&copy;
             </a>2019 ♠ Developed by Grigoris Paraskevakos
         </p> -->
-            <p>Copyright
-                <a href="https://grigorisparaskevakos.github.io/" target="_blank " rel="noopener">PortfolioGP©
-                </a>2021 ♠ crafted by Grigoris Paraskevakos
-            </p>
-        </footer>
+        <p>Copyright
+            <a href="https://grigorisparaskevakos.github.io/" target="_blank " rel="noopener">PortfolioGP©
+            </a>2021 ♠ crafted by Grigoris Paraskevakos
+        </p>
+    </footer>
 
 
+    <!-- https://www.youtube.com/watch?v=BxbJmMMq0A4 -->
+    <a href="https://www.youtube.com/watch?v=BxbJmMMq0A4"></a>
+    <script>
+        var player = function () {
 
-        <!-- https://www.youtube.com/watch?v=BxbJmMMq0A4 -->
-        <a href="https://www.youtube.com/watch?v=BxbJmMMq0A4"></a>
+            //let x = $("#muse"); 
 
-        <script>
-            var player = function () {
+            this.musicPlayer = {
 
-                //let x = $("#muse");            
-                this.musicPlayer = {
+                play: function () {
+                    document.getElementById("muse").play();
+                    document.getElementById("muse").load();
+                    document.getElementById("muse").volume = 1.000000;
+                    setTimeout(
+                        function () {
+                            document.getElementById("muse").play();
+                        }, 1);
+                },
 
-                    play: function () {
-                        document.getElementById("muse").play();
-                        document.getElementById("muse").load();
-                        document.getElementById("muse").volume = 1.000000;
-                        setTimeout(
-                            function () {
-                                document.getElementById("muse").play();
-                            }, 1);
-                    },
+                pause: function () {
+                    document.getElementById("muse").pause();
+                }
 
-                    pause: function () {
-                        document.getElementById("muse").pause();
-                    }
-
-                };
             };
-            let mp3Player = new player();
-        </script>
+        };
+        let mp3Player = new player();
+    </script>
 
 
-        <canvas width="1584" height="967" style="position: absolute; inset: 0px; z-index: -1;"></canvas><canvas
-            width="1601" height="798"
-            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></canvas>
+    <!-- <canvas width="1920" height="1080" style="position: absolute; inset: 0px; z-index: -1;"></canvas><canvas
+        width="1920" height="1080" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></canvas>
+
+
+    <canvas width="1920" height="1080" style="position: absolute; inset: 0px; z-index: -1;"></canvas><canvas
+        width="1920" height="1080" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></canvas> -->
 </body>
+
+</html>
 
 </html>
