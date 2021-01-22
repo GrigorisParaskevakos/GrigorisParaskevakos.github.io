@@ -279,6 +279,12 @@ audio {
     margin-right: 37%;
     display: flex;
   }
+
+  footer {
+    opacity: 1;
+    /*     border:solid red 1px; */
+    width: 100%
+  }
 }
 
 @media only screen and (max-width: 720px) {
