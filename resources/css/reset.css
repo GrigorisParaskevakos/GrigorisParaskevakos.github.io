@@ -90,6 +90,9 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    /* height: 100%; */
+    z-index: 999999999999999999999999;
+    overflow: hidden;
 }
 
 

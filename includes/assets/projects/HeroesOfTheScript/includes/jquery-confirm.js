@@ -266,7 +266,7 @@
             this.$holder = this.$el.find('.jconfirm-holder');
             // this.$content.css(this._getCSS(this.animationSpeed, this.animationBounce));
             this.$btnc = this.$el.find('.jconfirm-buttons');
-            this.$scrollPane = this.$el.find('.jconfirm-scrollpane');
+            // this.$scrollPane = this.$el.find('.jconfirm-scrollpane');
 
             that.setStartingPoint();
 
