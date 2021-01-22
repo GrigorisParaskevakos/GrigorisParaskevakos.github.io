@@ -36,6 +36,7 @@ button {
 
 html {
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -138,6 +139,7 @@ pre {
 /*Footer*/
 
 #footer {
+  margin: -1%;
   color: rgb(93.7%, 71.9%, 56.6%);
   font-size: 1.5rem;
   text-align: center;
