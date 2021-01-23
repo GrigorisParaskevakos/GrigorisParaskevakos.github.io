@@ -130,7 +130,8 @@ main {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: url("../images/zen.JPG");
+  /* background-image: url("../images/zen.JPG"); */
+  background-image: url("../images/zen.webp");
   background-size: cover;
   background-repeat: round;
   opacity: 0.09;
