@@ -14,9 +14,21 @@
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <script src="../HeroesOfTheScript/includes/js/main.js"></script>
     <script src="../HeroesOfTheScript/includes/js/HeroesOfTheScript.js"></script>
+
+    <!-- fix image -->
+    <script>
+        var element = document.getElementById('mainBody');
+        element.style.all = null;
+        function onload(){
+            document.getElementById("mainBody").removeAttribute("style");
+            // document.getElementById(
+            //     "removestyle").setAttribute("disabled", "true");
+        }
+        onload();
+    </script>
 </head>
 
-<body>
+<body id="mainBody">
 
     <main>
         <header>
@@ -40,10 +52,10 @@
     <div id="footer">
         <p>Copyright
             <!-- 2 dirs up is this.that root-->
-            <!-- <a href="../ColmarAcademy/index.html" target="_blank" rel="noopener">PortfolioGP&copy;</a> 2019 ♠ Developed by
+            <!-- <a href="../ColmarAcademy/index.html" target="_blank" rel="noopener">PortfolioGP&copy;</a> 2016 ♠ Developed by
             <em>Grigoris Paraskevakos</em>.</p> -->
-            <a href="https://grigorisparaskevakos.github.io/" target="_blank" rel="noopener">PortfolioGP&copy;</a> 2019 ♠ Developed by
-            <em>Grigoris Paraskevakos</em>.</p>
+            <a href="https://grigorisparaskevakos.github.io/" target="_blank" rel="noopener">PortfolioGP&copy;</a>2016 ♠ Developed by <em>Grigoris Paraskevakos</em>.
+        </p>
     </div>
 </body>
 
