@@ -59,6 +59,7 @@
     <script src="includes/js/jquery.ripples.js"></script>
 
     <!--Custom Scripts -->
+    <script src="resources/js/player.js"></script>
     <script src="includes/js/main.js"></script>
     <script src="includes/js/noise.js"></script>
     <!-- *************************</scripts>*********************************** -->
@@ -114,7 +115,7 @@
     <div class="audio">
         <audio id="muse" controls="" controlslist="nodownload">
             <source src="resources/audio/RulledBySecrecy.mp3" type="audio/ogg">
-            Your browser does not support the audio element.
+            <!-- Your browser does not support the audio element. -->
         </audio>
     </div>
 
@@ -124,41 +125,13 @@
         <!-- <p>Copyright
             <a href="includes/assets/projects/HeroesOfTheScript/index.html" target="_blank "
                 rel="noopener">PortfolioGP&copy;
-            </a>2019 ♠ Developed by Grigoris Paraskevakos
+            </a>2018 ♠ Developed by Grigoris Paraskevakos
         </p> -->
         <p>
             <a href="https://grigorisparaskevakos.github.io/" target="_blank " rel="noopener">
             </a>2021 ♠ crafted by Grigoris Paraskevakos&copy;
         </p>
     </footer>
-
-
-    <!-- <canvas width="1920" height="1080" style="position: absolute; inset: 0px; z-index: -1;"></canvas> -->
-    <script>
-        var player = function () {
-
-            //let x = $("#muse"); 
-
-            this.musicPlayer = {
-
-                play: function () {
-                    document.getElementById("muse").play();
-                    document.getElementById("muse").load();
-                    document.getElementById("muse").volume = 1.000000;
-                    setTimeout(
-                        function () {
-                            document.getElementById("muse").play();
-                        }, 1);
-                },
-
-                pause: function () {
-                    document.getElementById("muse").pause();
-                }
-
-            };
-        };
-        let mp3Player = new player();
-    </script>
     <canvas width="1920" height="1080" style="position: absolute; inset: 0px; z-index: -1;"></canvas>
 </body>
 
