@@ -37,6 +37,7 @@
         }
     </style>
     <meta charset="UTF-8">
+    <meta name="description" content="Author: Grigoris Paraskevakos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
@@ -100,12 +101,12 @@
         <div class="arrows">
             <div id="arrowHeroes">
                 <img  src="resources/images/execute.svg"
-                    onclick="mp3Player.musicPlayer.play();arrowFunction('HeroesOfTheScript');">
+                    onclick="mp3Player.musicPlayer.play('muse');arrowFunction('HeroesOfTheScript');">
             </div>
 
             <div id="arrowCoffee">
                 <img src="resources/images/execute.svg"
-                    onclick="mp3Player.musicPlayer.play();arrowFunction('coffee');">
+                    onclick="mp3Player.musicPlayer.play('ocean');arrowFunction('coffee');">
                 <a href="./includes/assets/projects/coffee/index.html" target="_blank" rel="noopener"></a>
             </div>
         </div>
@@ -115,6 +116,10 @@
     <div class="audio">
         <audio id="muse" controls="" controlslist="nodownload">
             <source src="resources/audio/RulledBySecrecy.mp3" type="audio/ogg">
+            <!-- Your browser does not support the audio element. -->
+        </audio>
+        <audio id="ocean" controls="" controlslist="nodownload">
+            <source src="resources/audio/fromIndianOceanToCurrentState.mp3" type="audio/ogg">
             <!-- Your browser does not support the audio element. -->
         </audio>
     </div>
