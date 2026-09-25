@@ -1,143 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<link type="text/css" rel="stylesheet" id="dark-mode-general-link">
-<link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
-<style lang="en" type="text/css" id="dark-mode-custom-style"></style>
-<!-- 1920x1080 -->
-
-<!-- TO DO -->
-
-<style>
-    .jquery-ripples {
-        position: relative;
-        z-index: 0;
-    }
-</style>
-<style>
-    .jquery-ripples {
-        position: relative !important;
-        z-index: 0;
-        display: flex;
-        height: 100%;
-        width: 100%;
-    }
-</style>
 
 <head>
-    <style>
-        .jquery-ripples {
-            position: relative;
-            z-index: 0;
-        }
-    </style>
-    <style>
-        .jquery-ripples {
-            position: relative;
-            z-index: 0;
-        }
-    </style>
     <meta charset="UTF-8">
-    <meta name="description" content="Author: Grigoris Paraskevakos">
+    <!-- GitHub Pages can't send security headers, so the CSP lives here. The style hash is the one
+         <style> that jquery.ripples injects; recompute it if you change or update that plugin. -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'sha256-e2XXF+eRWHBv6Uz5y9K5jy5R2nzye8t1Rno9ZTuBijg='; img-src 'self'; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="utf-8">
+    <title>Grigoris Paraskevakos</title>
+    <meta name="description"
+        content="Grigoris Paraskevakos, software developer since 2018. The academic web projects where it started (2016–17), plus links to GitHub and LinkedIn.">
+    <meta name="author" content="Grigoris Paraskevakos">
+    <meta name="theme-color" content="#29292a">
+    <link rel="canonical" href="https://grigorisparaskevakos.github.io/">
+
+    <!-- Link previews (LinkedIn, Slack, X...) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://grigorisparaskevakos.github.io/">
+    <meta property="og:title" content="Grigoris Paraskevakos">
+    <meta property="og:description"
+        content="Software developer since 2018. The academic web projects where it started (2016–17), plus links to GitHub and LinkedIn.">
+    <meta property="og:image" content="https://grigorisparaskevakos.github.io/resources/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!--favicon-->
+    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
 
     <!-- *************************<style>*********************************** -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
-    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-
-
-    <title>Dev loading...</title>
-    <!--favicon-->
-    <link href="resources/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="preload" href="resources/fonts/space_age.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/style.css">
 
     <!-- *************************<scripts>*********************************** -->
-    <!-- Scripts APIs-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-    <script src="includes/js/ready_function.js"></script>
-    <script src="includes/js/jquery.ripples.js"></script>
+    <!-- Scripts APIs (deferred: they run in order, after the page is parsed) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"
+        referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"
+        integrity="sha384-jjHgEv1aKR4CNMJrTCxr7j6K3HOexCFlAqN92iFyiRIoR/GsQUs2rjFGIVpswZAL" crossorigin="anonymous"
+        referrerpolicy="no-referrer" defer></script>
+    <script src="includes/js/jquery.ripples.js" defer></script>
 
     <!--Custom Scripts -->
-    <script src="resources/js/player.js"></script>
-    <script src="includes/js/main.js"></script>
-    <script src="includes/js/noise.js"></script>
-    <!-- *************************</scripts>*********************************** -->
-
-
+    <script src="includes/js/ready_function.js" defer></script>
+    <script src="includes/js/noise.js" defer></script>
+    <script src="resources/js/player.js" defer></script>
+    <script src="includes/js/main.js" defer></script>
 </head>
 
-<body style="" class="jquery-ripples">
-
-
-
+<body>
+    <!-- Underwater photo. The glints come from jquery.ripples on <body>, the swirl from noise.js -->
+    <div class="scene" aria-hidden="true"></div>
 
     <!-- Header Section -->
-    <header>
-        <nav>
+    <header class="site-header">
+        <nav aria-label="Main">
             <ul>
+                <li><a href="./" aria-current="page">Home</a></li>
                 <li>
-                    <a href="https://grigorisparaskevakos.github.io/">Home</a>
-                </li>
-                <li>
-                    <a href="https://github.com/GrigorisParaskevakos?tab=repositories" target="_blank "
+                    <a href="https://github.com/GrigorisParaskevakos?tab=repositories" target="_blank"
                         rel="noopener">Repositories</a>
                 </li>
                 <li>
-                    <a href="https://gr.linkedin.com/in/grigoris-paraskevakos-897360148" target="_blank "
-                        rel="noopener">Contact</a>
+                    <a href="https://gr.linkedin.com/in/grigoris-paraskevakos-897360148" target="_blank"
+                        rel="noopener">LinkedIn</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <!-- Desktop Navigation -->
     <!--Main Section-->
-    <main class="jquery-ripples" id="mainSet">
-        <div id="Coming">
-            <h1>loading. . .</h1>
+    <main>
+        <div class="intro">
+            <h1>Grigoris Paraskevakos</h1>
+            <p class="role">Software developer since 2018</p>
         </div>
-        <div class="arrows">
-            <div id="arrowHeroes">
-                <img  src="resources/images/execute.svg"
-                    onclick="mp3Player.musicPlayer.play('muse');arrowFunction('HeroesOfTheScript');">
-            </div>
 
-            <div id="arrowCoffee">
-                <img src="resources/images/execute.svg"
-                    onclick="mp3Player.musicPlayer.play('ocean');arrowFunction('coffee');">
-                <a href="./includes/assets/projects/coffee/index.html" target="_blank" rel="noopener"></a>
-            </div>
-        </div>
+        <section class="projects" aria-labelledby="projects-title">
+            <h2 id="projects-title">
+                <span class="tagline">dev loading. . .</span>
+                <span class="nowrap">where it started</span> ·
+                <span class="nowrap">academic projects 2016–17</span>
+            </h2>
+            <ul>
+                <li>
+                    <a class="portal portal--heroes" href="includes/assets/projects/HeroesOfTheScript/index.html"
+                        target="_blank" rel="noopener" data-track="muse">
+                        <span class="portal__icon" aria-hidden="true"></span>
+                        <span class="portal__name">Heroes of the Script</span>
+                        <span class="portal__info">text RPG · JavaScript</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="portal portal--coffee" href="includes/assets/projects/coffee/index.html"
+                        target="_blank" rel="noopener" data-track="ocean">
+                        <span class="portal__icon" aria-hidden="true"></span>
+                        <span class="portal__name">Best Coffee Regions</span>
+                        <span class="portal__info">styled page · HTML &amp; CSS</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="portal portal--colmar" href="includes/assets/projects/ColmarAcademy/index.html"
+                        target="_blank" rel="noopener">
+                        <span class="portal__icon" aria-hidden="true"></span>
+                        <span class="portal__name">Colmar Academy</span>
+                        <span class="portal__info">Codecademy capstone project</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="portal portal--wda" href="https://grigorisparaskevakos.github.io/WDA/"
+                        target="_blank" rel="noopener">
+                        <span class="portal__icon" aria-hidden="true"></span>
+                        <span class="portal__name">Web Academy</span>
+                        <span class="portal__info">CollegeLink capstone project</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
     </main>
 
-    <!-- audio -->
-    <div class="audio">
-        <audio id="muse" controls="" controlslist="nodownload">
-            <source src="resources/audio/RulledBySecrecy.mp3" type="audio/ogg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
-        <audio id="ocean" controls="" controlslist="nodownload">
-            <source src="resources/audio/fromIndianOceanToCurrentState.mp3" type="audio/ogg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
-    </div>
-
     <!-- Footer-->
-    <!-- https://grigorisparaskevakos.github.io/ -->
-    <footer>
-        <!-- <p>Copyright
-            <a href="includes/assets/projects/HeroesOfTheScript/index.html" target="_blank "
-                rel="noopener">PortfolioGP&copy;
-            </a>2018 ♠ Developed by Grigoris Paraskevakos
-        </p> -->
-        <p>
-            <a href="https://grigorisparaskevakos.github.io/" target="_blank " rel="noopener">
-            </a>2021 ♠ crafted by Grigoris Paraskevakos&copy;
-        </p>
+    <footer class="site-footer">
+        <p>&copy; 2017–<span data-year>2026</span> ♠ crafted by Grigoris Paraskevakos</p>
+        <button class="sound" type="button" aria-pressed="false" aria-label="Music" title="Music off">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path class="sound__speaker" d="M4 9h4l5-4v14l-5-4H4z" />
+                <path class="sound__on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" />
+                <path class="sound__off" d="M16.5 9.5l5 5m0-5l-5 5" />
+            </svg>
+        </button>
     </footer>
-    <canvas width="1920" height="1080" style="position: absolute; inset: 0px; z-index: -1;"></canvas>
+
+    <!-- melodies, started by the project links (data-track) -->
+    <audio id="muse" src="resources/audio/RulledBySecrecy.mp3" preload="none"></audio>
+    <audio id="ocean" src="resources/audio/fromIndianOceanToCurrentState.mp3" preload="none"></audio>
 </body>
 
 </html>

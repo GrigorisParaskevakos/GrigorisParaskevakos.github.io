@@ -1,39 +1,17 @@
 /**
- * Ui Hidden Url btn
- * @param {*} url 
+ * Project links are plain <a target="_blank"> links (keyboard, middle-click
+ * and "copy link" work); clicking one also picks its melody, which plays
+ * when the sound toggle is on.
  */
-function arrowFunction(url) {
+document.addEventListener('DOMContentLoaded', () => {
+    const mp3Player = new Player(document.querySelector('.sound'), 'ocean');
 
-
-    //Project Urls
-    var coffeeURL = "includes/assets/projects//coffee/index.html";
-    var HeroesOfTheScript = "includes/assets/projects/HeroesOfTheScript/index.html";
-    var ColmarAcademy = "includes/assets/projects/ColmarAcademy/index.html";
-    var WDA = "";
-
-
-    switch (url) {
-
-        case "coffee":
-            url = coffeeURL;
-            break;
-
-        case "HeroesOfTheScript":
-            url = HeroesOfTheScript;
-            break;
-
-        case "ColmarAcademy":
-            url = ColmarAcademy;
-            break;
-
-        case "WDA":
-            url = WDA;
-            break;
-
-        default:
-            url = url;
-            console.log("relative URL: " + url);
+    for (const link of document.querySelectorAll('[data-track]')) {
+        link.addEventListener('click', () => mp3Player.play(link.dataset.track));
     }
 
-    window.open(url, '_blank');
-}
+    // keeps the footer year current
+    for (const year of document.querySelectorAll('[data-year]')) {
+        year.textContent = new Date().getFullYear();
+    }
+});
